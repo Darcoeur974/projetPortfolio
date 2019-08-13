@@ -127,8 +127,20 @@ li a:hover {
 }
 
 .galerie-ill {
-    background-color: lightgrey;
-    height: 100vh;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie-ill img {
+    max-width: 100%;
+    height: auto;
+}
+
+.galerie-ill .galerie-block {
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .text-galerie {
@@ -215,12 +227,22 @@ col-lg-3 {
     .galerie-web p {
         font-size: 18px;
     }
+    .galerie-ill {
+        height: 100vh;
+    }
+    .galerie-ill p {
+        font-size: 18px;
+    }
     .galerie-titre {
         width: 250px;
         text-align: center;
-        writing-mode: vertical-rl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-lr;
         text-orientation: upright;
         padding-right: 50px;
+        padding-left: 50px;
         text-transform: uppercase;
     }
 }
@@ -244,6 +266,24 @@ col-lg-3 {
     }
     .galerie-web p {
         font-size: 12px;
+    }
+    .galerie-web img {
+        padding: 5px;
+    }
+    .galerie-ill {
+        height: 100%;
+    }
+    .galerie-ill p {
+        font-size: 12px;
+    }
+    .galerie-ill h1 {
+        order: 1;
+    }
+    .galerie-ill img {
+        padding: 5px;
+    }
+    .galerie-ill .text-center {
+        order: 2;
     }
     .galerie-titre {
         padding-top: 15px;

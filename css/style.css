@@ -49,6 +49,20 @@ li a:hover {
     text-decoration: none;
 }
 
+.a-presentation {
+    font-size: 20px;
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+.a-presentation:hover {
+    font-size: 20px;
+    opacity: 1;
+    color: black;
+    text-decoration: none;
+}
+
 
 /* ----- SECTION ----- */
 

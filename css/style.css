@@ -111,6 +111,14 @@ li a:hover {
 
 .galerie-web {
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie-web .galerie-block {
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .galerie-web img {
@@ -126,6 +134,16 @@ li a:hover {
 .text-galerie {
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+
+.text-galerie hr {
+    border: 1px black solid;
+    width: 75%;
+}
+
+.text-galerie small {
+    color: grey;
 }
 
 
@@ -197,6 +215,14 @@ col-lg-3 {
     .galerie-web p {
         font-size: 18px;
     }
+    .galerie-titre {
+        width: 250px;
+        text-align: center;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        padding-right: 50px;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -218,6 +244,10 @@ col-lg-3 {
     }
     .galerie-web p {
         font-size: 12px;
+    }
+    .galerie-titre {
+        padding-top: 15px;
+        text-align: center;
     }
 }
 

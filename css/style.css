@@ -1,14 +1,17 @@
 /* ----- HEADER ----- */
 
+
+/* nav */
+
 header {
     background-color: lightcoral;
     height: 100vh;
 }
 
 nav {
-    background-color: lightpink;
     margin: 0;
-    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .nav-center {
@@ -49,6 +52,30 @@ li a:hover {
     text-decoration: none;
 }
 
+
+/* presentation */
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.presentation h1 {
+    line-height: 90%;
+    font-size: 50px;
+}
+
+.presentation p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.span-presentation {
+    opacity: 0.5;
+}
+
 .a-presentation {
     font-size: 20px;
     opacity: 0.5;
@@ -63,11 +90,33 @@ li a:hover {
     text-decoration: none;
 }
 
+.lien-presentation {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.lien-presentation hr {
+    border: 1px solid black;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.lien-presentation .hr-special {
+    width: 75%;
+}
+
 
 /* ----- SECTION ----- */
 
-section {
-    background-color: blue;
+.galerie-web {
+    background-color: lightblue;
+    height: 100vh;
+}
+
+.galerie-ill {
+    background-color: lightgrey;
+    height: 100vh;
 }
 
 
@@ -111,11 +160,16 @@ col-lg-3 {
 /* au dessus de 781 */
 
 @media screen and (min-width: 995px) {
+    /* nav */
     .nav-titre h1 {
         font-size: 50px;
     }
     .nav-menu {
         font-size: 20px;
+    }
+    /* presentation */
+    .presentation small {
+        margin-left: 80%;
     }
 }
 
@@ -124,9 +178,25 @@ col-lg-3 {
 
 @media screen and (max-width: 994px) {
     .nav-titre h1 {
-        font-size: 14px;
+        font-size: 25px;
     }
     .nav-menu {
         font-size: 12px;
     }
+    /* presentation */
+    .presentation small {
+        margin-left: 50%;
+    }
+}
+
+
+/* police / font */
+
+.font-indie {
+    font-family: 'Indie Flower', cursive;
+}
+
+.font-comfor {
+    font-family: 'Comfortaa', cursive;
+    ;
 }

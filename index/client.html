@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS style.css -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- police / font -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower&display=swap" rel="stylesheet">
     <title>portfolio</title>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
+    <header class="font-comfor">
         <!-- navbar -->
         <nav>
             <div class="container">
@@ -28,43 +30,54 @@
                     <div class="col-6 col-lg-6 nav-menu">
                         <ul>
                             <li>
-                                <a href="#Acceuil">Acceuil</a></li>
+                                <a href="#Acceuil">Acceuil</a>
+                            </li>
                             <li>
-                                <a href="#Portfolio">Portfolio</a></li>
+                                <a href="#Portfolio">Portfolio</a>
+                            </li>
                             <li>
-                                <a href="#Parcour">Parcour</a></li>
+                                <a href="#Parcour">Parcour</a>
+                            </li>
                             <li>
-                                <a href="#Contact">Contact</a></li>
+                                <a href="#Contact">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
+                <hr>
             </div>
         </nav>
-        <div class="container text-center">
-            <h1>BIENVENUE</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aliquam eveniet perferendis hic totam aliquid facere porro amet magni consequatur eaque doloremque ex nemo ullam accusamus ipsam ratione iure dignissimos.
+        <!-- /navbar-->
+        <!-- presentation -->
+        <div class="container text-center presentation">
+            <h1>O'CONNOR MORGAN<br><span class="span-presentation">-</span><br>Portfolio</h1>
+            <p class="font-indie">
+                " C’est en faisant des erreurs que l’on apprend et que l’on se développe. Il faut être mauvais pour devenir bon "
             </p>
-            <div class="row">
-                <div class="col-5">
-                    <hr>
-                    <a class="a-presentation" href="">Galerie web</a>
+            <small>- par Paula Scher</small>
+            <div class="row lien-presentation">
+                <div class="col-6 col-lg-5">
+                    <hr class="hr-special">
+                    <a class="a-presentation" href="#galerie-web">Galerie web</a>
                     <hr>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-5">
+                <div class="col-0 col-lg-2"></div>
+                <div class="col-6 col-lg-5">
                     <hr>
-                    <a class="a-presentation" href="">Galerie Illustration</a>
-                    <hr>
+                    <a class="a-presentation" href="#galerie-ill">Galerie Illustration</a>
+                    <hr class="hr-special">
                 </div>
             </div>
         </div>
-        <!-- /navbar-->
+        <!-- /presentation -->
     </header>
     <!-- /HEADER -->
     <!-- SECTION -->
-    <section>
-        <h1>SECTION</h1>
+    <section class="galerie-web" id="galerie-web">
+        <h1>SECTION 1</h1>
+    </section>
+    <section class="galerie-ill" id="galerie-ill">
+        <h1>SECTION 2</h1>
     </section>
     <!-- /SECTION -->
     <!-- FOOTER -->

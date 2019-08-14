@@ -143,6 +143,16 @@ li a:hover {
     margin-left: 50px;
 }
 
+.galerie-titre a {
+    color: black;
+    opacity: 0.5;
+}
+
+.galerie-titre a:hover {
+    color: black;
+    opacity: 1;
+}
+
 .text-galerie {
     justify-content: center;
     align-items: center;
@@ -225,13 +235,13 @@ col-lg-3 {
         height: 100vh;
     }
     .galerie-web p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .galerie-ill {
         height: 100vh;
     }
     .galerie-ill p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .galerie-titre {
         width: 250px;
@@ -244,6 +254,14 @@ col-lg-3 {
         padding-right: 50px;
         padding-left: 50px;
         text-transform: uppercase;
+    }
+    /* icone fontAwesome */
+    .flip {
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
     }
 }
 
@@ -288,6 +306,26 @@ col-lg-3 {
     .galerie-titre {
         padding-top: 15px;
         text-align: center;
+    }
+    .galerie-titre h1 {
+        display: flex;
+        font-size: 30px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .galerie-titre h1 div {
+        margin: 0;
+        padding: 0;
+    }
+    .galerie-web-indice i {
+        position: absolute;
+        left: 272px;
+        top: -20px;
+    }
+    .galerie-ill-indice i {
+        position: absolute;
+        left: 29px;
+        top: -39px;
     }
 }
 

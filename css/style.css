@@ -177,14 +177,14 @@ li a:hover {
     align-items: center;
 }
 
+.parcour h1 {
+    text-transform: uppercase;
+}
+
 .parcour-info {
     height: auto;
     padding-right: 50px;
     padding-left: 50px;
-}
-
-.parcour-info h1 {
-    text-transform: uppercase;
 }
 
 .parcour-info div {

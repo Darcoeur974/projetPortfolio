@@ -278,14 +278,17 @@
                 </div>
                 <div class="col-6 col-lg-4">
                     <hr class="hr-special">
-                    <form action="contact.php">
+                    <form name="contact" method="POST" data-netlify="true">
                         <label for="email">Votre E-Mail</label><br>
                         <input type="email" placeholder="e-mail"><br>
                         <label for="identifiant">Votre Nom et/ou Prénom</label><br>
                         <input type="identifiant" placeholder="Nom et/ou prénom"><br>
                         <label for="objet">L'objet de votre prise de contact</label><br>
                         <input type="objet" placeholder="objet"><br>
-                        <textarea name="" id="" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit [...]"></textarea>
+                        <textarea name="texte" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit [...]"></textarea>
+                        <p>
+                            <button type="submit">Envoyer</button>
+                        </p>
                     </form>
                     <hr>
                 </div>

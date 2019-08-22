@@ -183,6 +183,10 @@ li a:hover {
     padding-left: 50px;
 }
 
+.parcour-info h1 {
+    text-transform: uppercase;
+}
+
 .parcour-info div {
     margin: 0;
     padding: 0;

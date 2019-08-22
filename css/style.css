@@ -138,17 +138,20 @@ li a:hover {
     height: auto;
 }
 
-.galerie-ill .galerie-block {
+.galerie-ill .galerie-block,
+.footer-block {
     margin-right: 50px;
     margin-left: 50px;
 }
 
-.galerie-titre a {
+.galerie-titre a,
+.footer-titre a {
     color: black;
     opacity: 0.5;
 }
 
-.galerie-titre a:hover {
+.galerie-titre a:hover,
+.footer-titre a:hover {
     color: black;
     opacity: 1;
 }
@@ -168,6 +171,51 @@ li a:hover {
     color: grey;
 }
 
+.parcour {
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+}
+
+.parcour-info {
+    height: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.parcour-info div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parcour-info p {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.parcour-info h4 {
+    padding: 0;
+}
+
+.parcour-hr {
+    width: 50%;
+    border: 1px black solid;
+    opacity: 0.2;
+}
+
+.parcour-hr-haut {
+    width: 30%;
+    border: 1px black solid;
+}
+
+.parcour-hr-bas {
+    width: 60%;
+    border: 1px black solid;
+}
+
 
 /* ----- FOOTER ----- */
 
@@ -176,8 +224,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 footer hr {
@@ -203,6 +249,15 @@ footer textarea {
     padding: 5px;
     width: 100%;
     height: 200px;
+}
+
+.footer-hr {
+    border: 2px darkgray solid;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }
 
 
@@ -269,15 +324,13 @@ col-lg-3 {
     .presentation small {
         margin-left: 80%;
     }
-    .galerie-web {
+    .galerie-web,
+    .galerie-ill,
+    .parcour,
+    footer {
         height: 100vh;
     }
-    .galerie-web p {
-        font-size: 16px;
-    }
-    .galerie-ill {
-        height: 100vh;
-    }
+    .galerie-web p,
     .galerie-ill p {
         font-size: 16px;
     }
@@ -315,9 +368,6 @@ col-lg-3 {
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
     }
-    footer {
-        height: 100vh;
-    }
 }
 
 
@@ -327,7 +377,9 @@ col-lg-3 {
     .nav-titre h1 {
         font-size: 25px;
     }
-    .nav-menu {
+    .nav-menu,
+    .galerie-web p,
+    .galerie-ill p {
         font-size: 12px;
     }
     /* presentation */
@@ -337,20 +389,13 @@ col-lg-3 {
     .presentation small {
         margin-left: 50%;
     }
-    .galerie-web {
+    .galerie-web,
+    .galerie-ill,
+    .parcour {
         height: 100%;
-    }
-    .galerie-web p {
-        font-size: 12px;
     }
     .galerie-web img {
         padding: 5px;
-    }
-    .galerie-ill {
-        height: 100%;
-    }
-    .galerie-ill p {
-        font-size: 12px;
     }
     .galerie-ill h1 {
         order: 1;
@@ -361,17 +406,20 @@ col-lg-3 {
     .galerie-ill .text-center {
         order: 2;
     }
-    .galerie-titre {
+    .galerie-titre,
+    .footer-titre {
         padding-top: 15px;
         text-align: center;
     }
-    .galerie-titre h1 {
+    .galerie-titre h1,
+    .footer-titre h1 {
         display: flex;
         font-size: 30px;
         justify-content: space-around;
         align-items: center;
     }
-    .galerie-titre h1 div {
+    .galerie-titre h1 div,
+    .footer-titre h1 div {
         margin: 0;
         padding: 0;
     }
@@ -385,10 +433,17 @@ col-lg-3 {
         left: 29px;
         top: -39px;
     }
-    .galerie-web-order-1 {
+    .footer-web-indice i {
+        position: absolute;
+        left: 49px;
+        top: -22px;
+    }
+    .galerie-web-order-1,
+    .footer-order-1 {
         order: 1;
     }
-    .galerie-web-order-2 {
+    .galerie-web-order-2,
+    .footer-order-2 {
         order: 2;
     }
     .footer-titre {
@@ -424,13 +479,4 @@ col-lg-3 {
 .font-comfor {
     font-family: 'Comfortaa', cursive;
     ;
-}
-
-.footer-hr {
-    border: 2px black solid;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
 }

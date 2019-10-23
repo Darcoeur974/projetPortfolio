@@ -1,21 +1,16 @@
 <?php
-echo $_POST['nom'];
-echo $_POST['email'];
-echo $_POST['objet'];
-echo $_POST['message'];
-
     $erreur = [];
 
-    if(array_key_exists('nom', $_POST) OR $_POST['nom'] == ''){
+    if(!isset($_POST['nom']) OR $_POST['nom'] == ''){
         $erreur['nom'] = "Vous n'avez pas renseigner votre Nom.";
     }
-    if(array_key_exists('email', $_POST) OR $_POST['email'] == ''){
+    if(!isset($_POST['email']) OR $_POST['email'] == ''){
         $erreur['email'] = "Vous n'avez pas renseigner votre E-mail.";
     }
-    if(array_key_exists('objet', $_POST) OR $_POST['objet'] == ''){
+    if(!isset($_POST['objet']) OR $_POST['objet'] == ''){
         $erreur['objet'] = "Vous n'avez pas renseigner L'Objet.";
     }
-    if(array_key_exists('message', $_POST) OR $_POST['message'] == ''){
+    if(!isset($_POST['message']) OR $_POST['message'] == ''){
         $erreur['message'] = "Vous n'avez pas renseigner le Message.";
     }
 
@@ -32,6 +27,7 @@ echo $_POST['message'];
         $mail = $_POST['email'];
         
         mail($destinataire, "... De mon portfolio ...", $message, $headers);
+        header('Location: ../index.php?mailenvoyer');
     }
     var_dump($erreur);
     die();

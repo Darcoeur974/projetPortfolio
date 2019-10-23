@@ -12,11 +12,14 @@ include 'head.inc.php'
 
             <div id="probleme_contact">
 
-                <?php if(array_key_exists('erreur', $_SESSION)): ?>
+                <?php 
+                if(array_key_exists('erreur', $_SESSION)): ?>
                 <div class="alert alert-danger">
                     <?= implode('<br>', $_SESSION['erreur']); ?> 
                 </div>
-                <?php unset($_SESSION['erreur']); endif; ?>
+                <?php unset($_SESSION['erreur']); 
+                endif; 
+                ?>
 
             </div>
 

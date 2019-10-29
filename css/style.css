@@ -144,6 +144,22 @@ header h1 {
     }
 }
 
+.titre_header {
+    animation: animate_titre 5s linear infinite;
+}
+
+@keyframes animate_titre {
+    0% {
+        color: var(--marron);
+    }
+    50% {
+        color: var(--bleuC);
+    }
+    100% {
+        color: var(--marron);
+    }
+}
+
 
 /* ---------- SIDEBAR de GAUCHE ---------- */
 

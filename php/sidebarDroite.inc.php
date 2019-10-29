@@ -4,9 +4,6 @@
     <i class="fas fa-times"></i>
   </button>
   <ul id="sidebarDroite_liste">
-    <?php
-    include 'contact.inc.php'
-    ?>
   </ul>
 </div>
 

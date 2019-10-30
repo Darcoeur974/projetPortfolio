@@ -5,11 +5,7 @@
 <script src="https://kit.fontawesome.com/3227ebb15b.js" crossorigin="anonymous"></script>
 
 <script src="js/script.js"></script>
-<script src="../js/script.js"></script>
 
 <script src="js/jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
-
-<script src="../js/jquery.min.js"></script>
-<script src="../owlcarousel/owl.carousel.min.js"></script>
 </footer>

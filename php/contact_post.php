@@ -15,7 +15,6 @@
     }
 
     if(!empty($erreur)){
-        session_start();
         $_SESSION['erreur'] = $erreur;
         header('Location: contact.php');
     }

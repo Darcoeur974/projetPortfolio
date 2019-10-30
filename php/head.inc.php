@@ -10,5 +10,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/owl.theme.default.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Hind+Guntur|Mansalva|Permanent+Marker&display=swap" rel="stylesheet">
 </head>

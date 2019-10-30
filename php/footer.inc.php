@@ -7,4 +7,9 @@
 <script src="js/script.js"></script>
 <script src="../js/script.js"></script>
 
+<script src="js/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../owlcarousel/owl.carousel.min.js"></script>
 </footer>

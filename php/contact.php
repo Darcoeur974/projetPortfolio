@@ -7,7 +7,7 @@ include 'head.inc.php'
 </div>
 <div class="block_formulaire">
     <div class="container">
-        <form action="contact_post.php" method="post" id="formulaire_contact">
+        <form action="" method="post" id="formulaire_contact">
             <h1 class="contact_titre">Formulaire de contact</h1>
 
             <div id="probleme_contact">
@@ -26,20 +26,28 @@ include 'head.inc.php'
             <div class="row">
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom">
+                <small id="nom_verif"></small>
             </div>
             <div class="row">
                 <label for="email">Courriel :</label>
-                <input type="text" id="email" name="email">
+                <input type="mail" id="email" name="email">
+                <small id="email_verif"></small>
             </div>
             <div class="row">
                 <label for="objet">Objet :</label>
                 <input type="text" id="objet" name="objet">
+                <small id="objet_verif"></small>
             </div>
             <div class="row">
                 <label for="message">Message :</label>
                 <textarea name="message" id="message"></textarea>
+                <small id="message_verif"></small>
             </div>
             <input type="submit" name="submit" value="Envoyer" id="bouton_contact">
         </form>
     </div>
 </div>
+
+<?php
+include 'footer.inc.php'
+?>
